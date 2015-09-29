@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:text="ಮಣ್ಣಿನ ರೀತಿಯ"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="25dp"
+                android:layout_gravity="center" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="ಮೆಕ್ಕಲು
+
+Mekkalu"
+                android:id="@+id/im1" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="ಕಪ್ಪು
+
+Kappu"
+
+                android:id="@+id/im2" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="ಹಳದಿ ಮತ್ತು ಕೆಂಪು
+
+Haḷadi mattu kempu"
+                android:id="@+id/im3" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="ಲ್ಯಾಟರೈಟ್ ಮಣ್ಣು
+
+Lyāṭaraiṭ maṇṇu"
+                android:id="@+id/im4" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="ಮೌಂಟೇನ್ ಮಣ್ಣು
+
+Mauṇṭēn maṇṇu"
+                android:id="@+id/im5" />
+
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:text="ಡೆಸರ್ಟ್ ಸಾಯಿಲ್
+
+Ḍesarṭ sāyil "
+                android:id="@+id/im6" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

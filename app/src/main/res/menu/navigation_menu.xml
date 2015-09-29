@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/nav_inquiry"
+        android:icon="@drawable/ic_inquiry"
+        android:title="Inquiry"/>
+    <item android:id="@+id/nav_ngo"
+        android:icon="@drawable/ic_ngo"
+        android:title="NGO"/>
+    <item android:id="@+id/nav_soilmapping"
+        android:icon="@drawable/ic_ngo"
+        android:title="Soil Mapping"/>
+    <item android:id="@+id/nav_bird"
+        android:icon="@drawable/ic_inquiry"
+        android:title="Bird Scarer"/>
+</menu>

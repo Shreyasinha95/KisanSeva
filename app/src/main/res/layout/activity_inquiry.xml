@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:background="#c5cac9"
+    android:layout_height="fill_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="ಚಿತ್ರವನ್ನು ಮಾಡಲು ಅಪ್ಲೋಡ್"
+        android:id="@+id/textView3"
+        android:textSize="40dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginLeft="75dp"
+        android:layout_weight="0.07" />
+
+    <ImageView
+        android:id="@+id/pic"
+        android:layout_width="64dp"
+        android:layout_marginTop="-75dp"
+        android:layout_marginLeft="5dp"
+        android:layout_height="63dp"
+        android:src="@drawable/pic"></ImageView>
+
+    <ImageView
+        android:id="@+id/imgView"
+        android:layout_width="fill_parent"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"></ImageView>
+
+    <Button
+        android:layout_height="wrap_content"
+        android:text="ಲೋಡ್ ಚಿತ್ರ"
+        android:layout_width="wrap_content"
+        android:id="@+id/buttonLoadPicture"
+        android:layout_weight="0"
+        android:layout_gravity="center"></Button>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="next-->"
+        android:id="@+id/button2"/>
+</LinearLayout>
