@@ -11,6 +11,7 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -49,14 +50,10 @@ public class Inquiry2 extends ActionBarActivity implements View.OnClickListener 
                 try {
                     myAudioRecorder.prepare();
                     myAudioRecorder.start();
-                }
-
-                catch (IllegalStateException e) {
+                } catch (IllegalStateException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
-                }
-
-                catch (IOException e) {
+                } catch (IOException e) {
                     // TODO Auto-generated catch block
                     e.printStackTrace();
                 }
@@ -107,6 +104,14 @@ public class Inquiry2 extends ActionBarActivity implements View.OnClickListener 
                 Toast.makeText(getApplicationContext(), "Playing audio", Toast.LENGTH_LONG).show();
             }
         });
+        Button home = (Button)findViewById(R.id.home);
+        home.setOnClickListener(new View.OnClickListener(){
+                                   public void onClick(View v){
+                                       Intent in=new Intent(Inquiry2.this,Schemes.class);
+                                       startActivity(in);
+                                   }
+                                }
+        );
     }
 
 
@@ -135,8 +140,9 @@ public class Inquiry2 extends ActionBarActivity implements View.OnClickListener 
 
     @Override
     public void onClick(View v) {
-        Intent in=new Intent(Inquiry2.this,Inquiry3.class);
-        startActivity(in);
+        TextView success =(TextView)findViewById(R.id.success);
+        success.setText("ಪ್ರಶ್ನೆ ಕಳುಹಿಸಲಾಗಿದೆ!!!");
+
 
     }
 }

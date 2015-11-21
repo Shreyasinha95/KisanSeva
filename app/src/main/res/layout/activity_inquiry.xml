@@ -4,31 +4,39 @@
     android:layout_width="fill_parent"
     android:background="#c5cac9"
     android:layout_height="fill_parent">
-
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="ಚಿತ್ರವನ್ನು ಮಾಡಲು ಅಪ್ಲೋಡ್"
         android:id="@+id/textView3"
-        android:textSize="40dp"
-        android:layout_marginTop="55dp"
+        android:textSize="21dp"
+        android:layout_marginTop="59dp"
         android:layout_marginLeft="75dp"
         android:layout_weight="0.07" />
 
     <ImageView
         android:id="@+id/pic"
         android:layout_width="64dp"
-        android:layout_marginTop="-75dp"
+        android:layout_marginTop="40dp"
         android:layout_marginLeft="5dp"
         android:layout_height="63dp"
-        android:src="@drawable/pic"></ImageView>
+        android:src="@drawable/latest"></ImageView>
+
 
     <ImageView
         android:id="@+id/imgView"
-        android:layout_width="fill_parent"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
         android:layout_weight="1"
-        android:layout_height="wrap_content"></ImageView>
+        android:layout_below="@+id/pic"
+        android:layout_marginTop="20dp"
+        android:src="@drawable/noimage"
+        android:layout_centerHorizontal="true"
+        ></ImageView>
 
     <Button
         android:layout_height="wrap_content"
@@ -36,10 +44,18 @@
         android:layout_width="wrap_content"
         android:id="@+id/buttonLoadPicture"
         android:layout_weight="0"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/imgView"
+
         android:layout_gravity="center"></Button>
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="next-->"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:background="@drawable/next"
+        android:layout_marginLeft="315dp"
+        android:layout_below="@id/buttonLoadPicture"
+        android:layout_marginTop="20dp"
         android:id="@+id/button2"/>
+</RelativeLayout>
 </LinearLayout>

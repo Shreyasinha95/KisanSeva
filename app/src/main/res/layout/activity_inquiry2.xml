@@ -26,53 +26,94 @@
         android:layout_height="60dp"
         android:id="@+id/imageView"
         android:src="@drawable/mic"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="26dp"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Record"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/record"
         android:id="@+id/button"
+        android:layout_marginLeft="20dp"
         android:layout_below="@+id/imageView"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_marginTop="59dp" />
+        android:layout_marginTop="29dp" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Stop"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:background="@drawable/stop"
         android:id="@+id/button2"
         android:layout_alignTop="@+id/button"
         android:layout_centerHorizontal="true" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="play"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/play"
         android:id="@+id/button3"
-        android:layout_alignTop="@+id/button2"
-        android:layout_toRightOf="@+id/send"
-        android:layout_toEndOf="@+id/send" />
+        android:layout_marginBottom="0dp"
+        android:layout_marginLeft="80dp"
+        android:layout_above="@+id/textView4"
+        android:layout_toRightOf="@+id/button2"
+        android:layout_toEndOf="@+id/button2" />
     <EditText
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:inputType="number"
         android:id="@+id/edit_query"
-        android:layout_below="@id/button2"
 
-        android:hint="phone no"/>
+        android:hint="phone no"
+android:layout_below="@+id/textView4"
+        android:layout_marginTop="10dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
     <Button
-        android:layout_width="175dp"
+        android:layout_width="50dp"
         android:layout_height="50dp"
-        android:text="send"
-
+        android:background="@drawable/sendo"
         android:id="@+id/send"
-        android:layout_below="@+id/edit_query"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="33dp" />
+android:layout_marginLeft="35dp"
+        android:layout_toRightOf="@+id/textView4"
+        android:layout_below="@+id/button2"
+        android:layout_marginTop="42dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter your contact number :"
+        android:id="@+id/textView4"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_below="@+id/button2"
+
+        android:layout_marginTop="30dp"
+        android:layout_centerVertical="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+android:layout_below="@+id/edit_query"
+        android:layout_marginTop="55dp"
+        android:id="@+id/success"
+        android:textColor="#303f9f"
+        android:textSize="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:background="@drawable/icon_home"
+        android:id="@+id/home"
+        android:layout_alignParentBottom="true"
+         />
 
 </RelativeLayout>

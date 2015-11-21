@@ -7,27 +7,47 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@drawable/birds"
+        android:background="@drawable/scare"
         android:alpha=".7">
 
         <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@drawable/playbird"
+            android:id="@+id/bu2"
+            android:layout_marginLeft="65dp"
+            android:layout_marginTop="450dp"
+            />
+
+        <Button
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+           android:background="@drawable/stopbird"
+            android:id="@+id/bu"
+android:layout_toRightOf="@+id/bu2"
+            android:layout_marginTop="450dp"
+
+            android:layout_marginLeft="110dp"
+
+           />
+
+        <ImageView
+            android:layout_width="170dp"
+            android:layout_height="60dp"
+            android:id="@+id/sound"
+            android:src="@drawable/sound"
+            android:layout_alignTop="@+id/bu"
+
+            android:layout_centerHorizontal="true" />
+
+        <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="stop"
-            android:id="@+id/bu2"
-            android:layout_gravity="center_vertical"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:layout_marginBottom="194dp" />
-    </RelativeLayout>
+            android:layout_marginLeft="-60dp"
+            android:layout_marginBottom="80dp"
+            android:id="@+id/birdsfly"
 
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="start"
-        android:id="@+id/bu"
-        android:layout_gravity="center_vertical"
-        android:layout_marginTop="160dp"
-        android:layout_centerHorizontal="true" />
+             />
+    </RelativeLayout>
 
 </RelativeLayout>
